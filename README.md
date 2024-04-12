@@ -4,18 +4,17 @@ An example, to illustrate the https://github.com/twmb/franz-go/issues/706
 
 ## Usage
 
-1\. Start local kafka cluster
+1\. Start local Kafka cluster
 
 
 ```
-> docker compose up kafka
+% docker compose up kafka
 ```
 
-2.\ Run Go tests
+2\. Run Go tests
 
 ```
-> go test ./
-
+% go test -v ./
 === RUN   TestListOffsetsAfterMilli
 === RUN   TestListOffsetsAfterMilli/kfake
     main_test.go:87:
@@ -43,4 +42,4 @@ FAIL	github.com/narqo/test-kfake	1.301s
 FAIL
 ```
 
-The results above show that the same test passed against Kafka, but failed when ran against `kfake` cluster.
+The results above show that the same test passed against Kafka, but failed when run against a `kfake` cluster.
