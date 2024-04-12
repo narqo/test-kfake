@@ -18,3 +18,5 @@ require (
 	golang.org/x/crypto v0.17.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/twmb/franz-go/pkg/kfake => github.com/narqo/franz-go/pkg/kfake v0.0.0-20240412135324-5d8aa1cd1be5
